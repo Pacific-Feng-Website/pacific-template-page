@@ -27,7 +27,7 @@
 	letter-spacing: 0.8px;
 	font-weight: 500;
 	padding-bottom: 8px;
-	font-size: 1.4em;
+	font-size: 1.4em !important;
 }
 
 #mc_embed_signup .mc-field-group{
