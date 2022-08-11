@@ -12,7 +12,7 @@
 #relatedPost{
 	display: grid;
 	grid-template-columns: 1fr 500px 500px 1fr; /*寬:長=5:4*/
-	grid-template-rows: 80px 400px 400px;
+	grid-template-rows: 80px 400px 400px 40px;
 	grid-row-gap: 20px;
 	background: #f6f3f2;  /*顏色在這邊設定*/
 }
@@ -204,7 +204,7 @@
 	#relatedPost{
 		display: grid;
 		grid-template-columns: 1fr 400px 30px 400px 1fr;
-		grid-template-rows: 80px 320px 320px;
+		grid-template-rows: 80px 320px 320px 40px;
 	}
 	
 	#relatedPost #related-post-pic1, #relatedPost #related-post-pic-name-frame1{
@@ -282,7 +282,7 @@
 	#relatedPost{
 		display: grid;
 		grid-template-columns: 1fr 350px 15px 350px 1fr;
-		grid-template-rows: 80px 280px 280px;
+		grid-template-rows: 80px 280px 280px 30px;
 	}
 	
 	#relatedPost #related-post-pic-name-frame1, #relatedPost #related-post-pic-name-frame2, #relatedPost #related-post-pic-name-frame3, #relatedPost #related-post-pic-name-frame4{
@@ -309,7 +309,7 @@
 	#relatedPost{
 		display: grid;
 		grid-template-columns: 1fr 400px 1fr;
-		grid-template-rows: 80px 320px 320px 320px 320px;
+		grid-template-rows: 80px 320px 320px 320px 320px 60px;
 		grid-row-gap: 0;
 	}
 	
