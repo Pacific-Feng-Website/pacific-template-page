@@ -38,6 +38,6 @@
 	padding-left: 2px;
 }
 
-#subscription-box div.mce_inline_error{
+div.mce_inline_error{
 	background-color:#F0EFED !important;
 }
