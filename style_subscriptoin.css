@@ -27,6 +27,7 @@
 	letter-spacing: 0.8px;
 	font-weight: 500;
 	padding-bottom: 8px;
+	font-size: 1.4em;
 }
 
 #mc_embed_signup .mc-field-group{
@@ -35,4 +36,8 @@
 
 #subscription-box .clear-foot{
 	padding-left: 2px;
+}
+
+#subscription-box div.mce_inline_error{
+	background-color:#F0EFED !important;
 }
