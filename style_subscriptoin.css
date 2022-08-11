@@ -13,29 +13,29 @@
 	align-items: center;
 }
 
+#subscription-box-topic h4{
+	font-size: 25px !important;
+	letter-spacing: 10px !important;
+}
+
 #subscription-box{
 	grid-column: 2/3;
 	grid-row: 2/3;
 }
 
-#subscription-box-topic h4{
-	font-size: 25px;
-	letter-spacing: 10px;
-}
-
 #subscription-box h5{
-	letter-spacing: 0.8px;
-	font-weight: 500;
-	padding-bottom: 8px;
+	letter-spacing: 0.8px !important;
+	font-weight: 500 !important;
+	padding-bottom: 8px !important;
 	font-size: 1.4em !important;
 }
 
 #mc_embed_signup .mc-field-group{
-	padding-bottom: 25px;
+	padding-bottom: 25px !important;
 }
 
 #subscription-box .clear-foot{
-	padding-left: 2px;
+	padding-left: 2px !important;
 }
 
 div.mce_inline_error{
