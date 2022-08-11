@@ -1,0 +1,24 @@
+#subscriptionBoard{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 150px 500px;
+}
+
+
+#subscription-box-topic{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#subscription-box-topic h4{
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+#subscription-box{
+	grid-column: 2/3;
+	grid-row: 2/3;
+}

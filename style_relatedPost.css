@@ -1,0 +1,392 @@
+#relatedPost img{
+	width: 90%;
+	height: auto;
+	border-radius: 2px;
+}
+
+#relatedPost a{
+	text-decoration: none;
+	color: black;
+}
+
+#relatedPost{
+	display: grid;
+	grid-template-columns: 1fr 500px 500px 1fr; /*寬:長=5:4*/
+	grid-template-rows: 80px 400px 400px;
+	grid-row-gap: 20px;
+	background: #f6f3f2;  /*顏色在這邊設定*/
+}
+
+#relatedPost #related-post-topic{
+	grid-column: 1/6;
+	grid-row: 1/2;
+	display:flex;
+	justify-content: center;
+	align-items: end;
+}
+
+#related-post-topic h4{
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+/* 第一個推薦文章*/
+#relatedPost #related-post-pic1{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+#relatedPost #related-post-pic1 a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#relatedPost #related-post-pic-name-frame1{
+	grid-column: 2/3;
+	grid-row: 2/3;
+	width: 400px; /*設定為#relatedPost的寬的長度*/
+	margin-left: calc((100% - 400px)/2);
+	margin-right: calc((100% - 400px)/2); /*260是#related-post-pic-name-frame1的寬*/
+	margin-top: calc((400px + 338px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+	padding: 5px;
+	height: 70px;
+	border: 1px solid #fff;
+}
+
+#relatedPost #related-post-pic-name1{
+	background: #fff;
+	height: 60px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+#related-post-pic-name1 h5{
+	font-size: 17px;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+
+/* 第二個推薦文章*/
+
+#relatedPost #related-post-pic2{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+#relatedPost #related-post-pic2 a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#relatedPost #related-post-pic-name-frame2{
+	grid-column: 3/4;
+	grid-row: 2/3;
+	width: 400px; /*設定為#relatedPost的寬的長度*/
+	margin-left: calc((100% - 400px)/2);
+	margin-right: calc((100% - 400px)/2); /*260是#related-post-pic-name-frame1的寬*/
+	margin-top: calc((400px + 338px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+	padding: 5px;
+	height: 70px;
+	border: 1px solid #fff;
+}
+
+#relatedPost #related-post-pic-name2{
+	background: #fff;
+	height: 60px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+#related-post-pic-name2 h5{
+	font-size: 17px;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+/* 第三個推薦文章*/
+
+#relatedPost #related-post-pic3{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+#relatedPost #related-post-pic3 a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#relatedPost #related-post-pic-name-frame3{
+	grid-column: 2/3;
+	grid-row: 3/4;
+	width: 400px; /*設定為#relatedPost的寬的長度*/
+	margin-left: calc((100% - 400px)/2);
+	margin-right: calc((100% - 400px)/2); /*260是#related-post-pic-name-frame1的寬*/
+	margin-top: calc((400px + 338px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+	padding: 5px;
+	height: 70px;
+	border: 1px solid #fff;
+}
+
+#relatedPost #related-post-pic-name3{
+	background: #fff;
+	height: 60px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+#related-post-pic-name3 h5{
+	font-size: 17px;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+/* 第四個推薦文章*/
+
+#relatedPost #related-post-pic4{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 3/4;
+	grid-row: 3/4;
+}
+
+#relatedPost #related-post-pic4 a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#relatedPost #related-post-pic-name-frame4{
+	grid-column: 3/4;
+	grid-row: 3/4;
+	width: 400px; /*設定為#relatedPost的寬的長度*/
+	margin-left: calc((100% - 400px)/2);
+	margin-right: calc((100% - 400px)/2); /*260是#related-post-pic-name-frame1的寬*/
+	margin-top: calc((400px + 338px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+	padding: 5px;
+	height: 70px;
+	border: 1px solid #fff;
+}
+
+#relatedPost #related-post-pic-name4{
+	background: #fff;
+	height: 60px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+#related-post-pic-name4 h5{
+	font-size: 17px;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+
+@media only screen and (max-width: 1100px){
+	
+	#relatedPost{
+		display: grid;
+		grid-template-columns: 1fr 400px 30px 400px 1fr;
+		grid-template-rows: 80px 320px 320px;
+	}
+	
+	#relatedPost #related-post-pic1, #relatedPost #related-post-pic-name-frame1{
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	
+	#relatedPost #related-post-pic-name-frame1{
+		grid-column: 2/3;
+		grid-row: 2/3;
+		width: 320px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 70px;
+		border: 1px solid #fff;
+	}
+	
+	#relatedPost #related-post-pic2, #relatedPost #related-post-pic-name-frame2{
+		grid-column: 4/5;
+		grid-row: 2/3;
+	}
+	
+	#relatedPost #related-post-pic-name-frame2{
+		grid-column: 4/5;
+		grid-row: 2/3;
+		width: 320px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 70px;
+		border: 1px solid #fff;
+	}
+	
+	#relatedPost #related-post-pic3, #relatedPost #related-post-pic-name-frame3{
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+	
+	#relatedPost #related-post-pic-name-frame3{
+		grid-column: 2/3;
+		grid-row: 3/4;
+		width: 320px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 70px;
+		border: 1px solid #fff;
+	}
+	
+	#relatedPost #related-post-pic4, #relatedPost #related-post-pic-name-frame4{
+		grid-column: 4/5;
+		grid-row: 3/4;
+	}
+	
+	#relatedPost #related-post-pic-name-frame4{
+		grid-column: 4/5;
+		grid-row: 3/4;
+		width: 320px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 70px;
+		border: 1px solid #fff;
+	}
+	
+}
+
+@media only screen and (max-width: 876px){
+	
+	#relatedPost{
+		display: grid;
+		grid-template-columns: 1fr 350px 15px 350px 1fr;
+		grid-template-rows: 80px 280px 280px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame1, #relatedPost #related-post-pic-name-frame2, #relatedPost #related-post-pic-name-frame3, #relatedPost #related-post-pic-name-frame4{
+		width: 280px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 280px)/2);
+		margin-right: calc((100% - 280px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((280px + 236px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 65px;
+		border: 1px solid #fff;
+	}
+	
+	#relatedPost #related-post-pic-name1, #relatedPost #related-post-pic-name2, #relatedPost #related-post-pic-name3, #relatedPost #related-post-pic-name4{
+		background: #fff;
+		height: 55px;
+		display:flex;
+		align-items: center;
+		justify-content:center;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	
+	#relatedPost{
+		display: grid;
+		grid-template-columns: 1fr 400px 1fr;
+		grid-template-rows: 80px 320px 320px 320px 320px;
+		grid-row-gap: 0;
+	}
+	
+	#relatedPost #related-post-pic1, #relatedPost #related-post-pic-name-frame1{
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	
+	#relatedPost #related-post-pic-name1{
+		height: 60px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame1{
+		grid-column: 2/3;
+		grid-row: 2/3;
+		width: 320px;
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*400是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*338是圖片的高，400是整個frame的高(定義在#relatedPost)，45=(70/2)+10(70=#related-post-pic-name1的高)*/
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic2, #relatedPost #related-post-pic-name-frame2{
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+	
+	#relatedPost #related-post-pic-name2{
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame2{
+		grid-column: 2/3;
+		grid-row: 3/4;
+		width: 320px;
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*400是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*338是圖片的高，400是整個frame的高(定義在#relatedPost)，45=(70/2)+10(70=#related-post-pic-name1的高)*/
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic3, #relatedPost #related-post-pic-name-frame3{
+		grid-column: 2/3;
+		grid-row: 4/5;
+	}
+	
+	#relatedPost #related-post-pic-name3{
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame3{
+		grid-column: 2/3;
+		grid-row: 4/5;
+		width: 320px;
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*400是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*338是圖片的高，400是整個frame的高(定義在#relatedPost)，45=(70/2)+10(70=#related-post-pic-name1的高)*/
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic4, #relatedPost #related-post-pic-name-frame4{
+		grid-column: 2/3;
+		grid-row: 5/6;
+	}
+	
+	#relatedPost #related-post-pic-name4{
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame4{
+		grid-column: 2/3;
+		grid-row: 5/6;
+		width: 320px;
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*400是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*338是圖片的高，400是整個frame的高(定義在#relatedPost)，45=(70/2)+10(70=#related-post-pic-name1的高)*/
+		height: 70px;
+	}
+
+}
