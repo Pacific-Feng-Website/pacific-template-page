@@ -1,0 +1,40 @@
+#igSideBar a{
+	text-decoration: none;
+}
+	
+#igSideBar{
+	grid-column: 4/5;
+	grid-row: 2/3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100px 10px 500px;
+}
+
+#ig-sidebar-name{
+	grid-column: 1/4;
+	grid-row: 1/2;
+}
+
+#ig-sidebar-name a{
+	display:flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+#ig-sidebar-name img{
+	width: 70px;
+	height: auto;
+	border-radius: 100%;
+	margin: 20px
+}
+
+#ig-sidebar-name p{
+	padding-bottom:10px;
+	font-size:20px;
+	color: #727321;
+}
+
+#ig-sidebar-photo{
+	grid-column: 1/4;
+	grid-row: 3/4;
+}
