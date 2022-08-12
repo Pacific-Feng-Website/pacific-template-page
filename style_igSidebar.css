@@ -38,3 +38,7 @@
 	grid-column: 1/4;
 	grid-row: 3/4;
 }
+
+.eapps-link{
+	display: none;
+}
