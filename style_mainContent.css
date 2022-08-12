@@ -11,7 +11,7 @@
 
 #mainContent{
 	grid-column: 2/3;
-	grid-row: 1/4;
+	grid-row: 1/5;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 80px 100px 30px 570px 30px 20px 20px 15260px; /*共16180px*/

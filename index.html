@@ -65,11 +65,13 @@
 		<link charset="utf-8" href="style_subscriptoin.css" rel="stylesheet" type="text/css"> <!-- To include .css of the subscription board -->
 		<link charset="utf-8" href="style_selfIntro.css" rel="stylesheet" type="text/css"> <!-- To include .css of the self introduction -->
 		<link charset="utf-8" href="style_igSidebar.css" rel="stylesheet" type="text/css"> <!-- To include .css of the ig side bar -->
+		<link charset="utf-8" href="style_fbSidebar.css" rel="stylesheet" type="text/css"> <!-- To include .css of the fb side bar -->
 		
 		
 		<!-- Java script library start -->
 		<script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
 		<script src="https://kit.fontawesome.com/df50142789.js" crossorigin="anonymous"></script> <!-- Font Awesome icons -->
+		<div id="fb-root"></div><script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v14.0&appId=739925347070306&autoLogAppEvents=1" nonce="AM88LEJC"></script> <!-- Facebook sidebar implementation -->
 		
 		
 		<!-- Title and meta descriptions start -->
@@ -351,8 +353,19 @@
 					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 					<div class="elfsight-app-a708f99d-8ff2-48f9-9e9a-a8793bd0b69d"></div>
 				</div>
+				<div id="ig-sidebar-whiteboard">
+					<p>&ensp;</p>
+				</div>
 			</div>
 			<!-- IG SIDE BAR END -->
+			
+			<!-- FB SIDE BAR BEGIN -->
+			<div id="fbSideBar">
+				<div id="fb-sidebar-body">
+					<div class="fb-page" data-href="https://www.facebook.com/PacFeng/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PacFeng/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PacFeng/">Pacific峰的部落格</a></blockquote></div>
+				</div>
+			</div>
+			<!-- FBSIDE BAR END -->
 			
 			
 			<!-- REALTED POST BEGIN -->
@@ -432,16 +445,6 @@
 				<div id="subscription-box-topic">	
 					<h4>獲取最新消息</h4>
 				</div>
-				
-				
-				<script>
-						document.getElementByClassName('mce_inline_error')[0].setAttribute('id','mce_inline_error');
-					/*
-						var mce_inline_error = document.querySelector('.mce_inline_error');
-						mce_inline_error.setAttribute('id','mce_inline_error');
-						document.getElementById("mce_inline_error").innerHTML="此處必填!";
-					*/
-				</script>
 					
 				<div id="subscription-box">	
 					<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
