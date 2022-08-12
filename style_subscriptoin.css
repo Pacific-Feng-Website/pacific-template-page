@@ -24,7 +24,7 @@
 }
 
 div.mce_inline_error{
-	background-color: #F0EFED;
+	background-color:#F0EFED !important;
 }
 
 @media only screen and (max-width: 876px){
