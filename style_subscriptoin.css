@@ -1,7 +1,9 @@
 #subscriptionBoard{
+	grid-column: 1/6;
+	grid-row: 4/5;
 	display: grid;
 	grid-template-columns: 1fr 700px 1fr;
-	grid-template-rows: 150px 500px;
+	grid-template-rows: 150px 200px;
 }
 
 

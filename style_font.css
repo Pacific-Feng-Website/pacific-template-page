@@ -5,6 +5,6 @@
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
-nav header, #mainContent h1, #mainContent h2, .siteIntro a, .siteIntro p, #relatedPost h4, #subscriptionBoard h4{
+nav header, #mainContent h1, #mainContent h2, .siteIntro a, .siteIntro p, #relatedPost h4, #subscriptionBoard h4, #self-intro-name h3,#self-intro-text p{
 	font-family: 'Noto Serif TC', serif !important;
 }
