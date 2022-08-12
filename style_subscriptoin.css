@@ -23,6 +23,10 @@
 	grid-row: 2/3;
 }
 
+div.mce_inline_error{
+	background-color: #F0EFED;
+}
+
 @media only screen and (max-width: 876px){
 	#subscriptionBoard{
 		display: grid;
