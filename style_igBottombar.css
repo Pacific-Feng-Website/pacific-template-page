@@ -43,6 +43,11 @@
     z-index: 1;
 }
 
+#ig-bottom-bar-box i.fa-clone{
+	color: white;
+	font-size: 20px
+}
+
 #ig-bottom-bar-box img{
 	position: relative;
 }
