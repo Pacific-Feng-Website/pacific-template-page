@@ -1,4 +1,7 @@
 #igBottomBar{
+	grid-column: 1/6;
+	grid-row: 7/8;
+	display: grid;
 	grid-template-columns: 1fr 1100px 1fr;
 	grid-template-rows: 50px 100px 30px 200px;
 }
