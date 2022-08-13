@@ -43,7 +43,7 @@
     z-index: 1;
 }
 
-#ig-bottom-bar-box i.fa-clone{
+#ig-bottom-bar-box .fa-image{
 	color: white;
 	font-size: 40px;
 }
