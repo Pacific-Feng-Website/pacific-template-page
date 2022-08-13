@@ -1,0 +1,15 @@
+#igBottomBar{
+	grid-template-columns: 1fr 1100px 1fr;
+	grid-template-rows: 50px 100px 30px 200px;
+}
+
+#ig-bottom-bar-name{
+	grid-column: 1/3;
+	grid-row: 2/3
+}
+
+#ig-bottom-bar-box{
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+
