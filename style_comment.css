@@ -2,7 +2,22 @@
 	grid-column: 1/6;
 	grid-row: 7/8;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr ;
-	grid-template-rows: 50px 200px  ;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 50px 20px 200px  ;
 }
 
+#commemt-box-topic{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	text-align: center
+}
+
+#commemt-box-topic h4{
+	font-size: 25px !important;
+	letter-spacing: 10px !important;
+}
+
+#commemt-box{
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
