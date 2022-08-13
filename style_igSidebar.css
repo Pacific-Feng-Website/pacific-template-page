@@ -7,7 +7,7 @@
 	grid-row: 2/3;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 100px 10px 450px;
+	grid-template-rows: 100px 10px 360px 90px;
 }
 
 #ig-sidebar-name{
@@ -41,7 +41,13 @@
 
 #ig-sidebar-whiteboard{
 	grid-column: 1/4;
-	grid-row: 3/4;
+	grid-row: 4/5;
+	z-index: 100000;
+}
+
+#ig-sidebar-whiteboard p{
+	color: white;
+	background: white;
 }
 
 .eapps-link{
