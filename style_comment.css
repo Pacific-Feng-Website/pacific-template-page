@@ -3,13 +3,16 @@
 	grid-row: 7/8;
 	display: grid;
 	grid-template-columns: 1fr 700px 1fr ;
-	grid-template-rows: 50px 20px 200px  ;
+	grid-template-rows: 50px 100px 200px  ;
 }
 
 #commemt-box-topic{
 	grid-column: 1/4;
-	grid-row: 1/2;
-	text-align: center
+	grid-row: 2/3;
+	text-align: center ;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #commemt-box-topic h4{
