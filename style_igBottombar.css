@@ -45,7 +45,8 @@
 
 #ig-bottom-bar-box .fa-image{
 	color: white;
-	font-size: 40px;
+	font-size: 20px;
+	margin: 10px;
 }
 
 #ig-bottom-bar-box img{
@@ -62,20 +63,28 @@
 #ig-bottom-bar-box-pic2{
 	grid-column: 2/3 ;
 	grid-row: 1/2 ;
+	display: flex;
+    justify-content: end;
 }
 
 #ig-bottom-bar-box-pic3{
 	grid-column: 3/4 ;
 	grid-row: 1/2 ;
+	display: flex;
+    justify-content: end;
 }
 #ig-bottom-bar-box-pic4{
 	grid-column: 4/5 ;
 	grid-row: 1/2 ;
+	display: flex;
+    justify-content: end;
 }
 
 #ig-bottom-bar-box-pic5{
 	grid-column: 5/6 ;
 	grid-row: 1/2 ;
+	display: flex;
+    justify-content: end;
 }
 
 
