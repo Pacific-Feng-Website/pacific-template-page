@@ -4,6 +4,7 @@
 	display: grid;
 	grid-template-columns: 1fr 700px 1fr ;
 	grid-template-rows: 50px 100px 200px  ;
+	background: #f6f3f2;  /*顏色在這邊設定*/
 }
 
 #commemt-box-topic{
@@ -23,4 +24,8 @@
 #commemt-box{
 	grid-column: 2/3;
 	grid-row: 3/4;
+}
+
+.powered-by {
+	display: none !important;
 }
