@@ -5,6 +5,7 @@
 	grid-template-columns: 1fr 1100px 1fr;
 	grid-template-rows: 50px 100px 30px 200px;
 	position:relative;
+	background: #ecd5cd;
 }
 
 #ig-bottom-bar-name{
@@ -19,8 +20,10 @@
 	font-size: 40px;
 }
 
-#ig-bottom-bar-box{
+#ig-bottom-bar-outer-box{
 	grid-column: 2/3;
 	grid-row: 4/5;
+	padding: 5px;
+	border: 1px #fff solid;
 }
 
