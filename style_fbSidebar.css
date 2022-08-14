@@ -1,8 +1,13 @@
 #fbSideBar{
 	grid-column: 1/2;
-	grid-row: 3/4;
+	grid-row: 4/5;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
+	grid-template-rows: 100px 1fr;
 	
+}
+
+#fb-sidebar-body{
+	grid-column: 1/2;
+	grid-row: 2/3;
 }

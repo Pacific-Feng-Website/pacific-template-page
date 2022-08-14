@@ -1,18 +1,22 @@
 #igSideBar a{
 	text-decoration: none;
 }
+
+#igSideBar img{
+	width: 100%;
+}
 	
 #igSideBar{
 	grid-column: 1/2 ;
 	grid-row: 2/3;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 100px 10px 360px 90px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 100px 10px 1fr 20px 50px;
 }
 
 #ig-sidebar-name{
-	grid-column: 1/4;
-	grid-row: 1/2;
+	grid-column: 1/2;
+	grid-row: 2/3;
 }
 
 #ig-sidebar-name a{
@@ -35,22 +39,71 @@
 }
 
 #ig-sidebar-photo{
-	grid-column: 1/4;
-	grid-row: 3/4;
-}
-
-#ig-sidebar-whiteboard{
-	grid-column: 1/4;
+	grid-column: 1/2;
 	grid-row: 4/5;
-	z-index: 100000;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 5px;
 }
 
-#ig-sidebar-whiteboard p{
-	color: white;
-	background: white;
-	height: 100%;
+#ig-side-bar-box-pic1{
+	grid-column: 1/2;
+	grid-row: 1/2
 }
 
-.eapps-link{
-	display: none !important;
+#ig-side-bar-box-pic2{
+	grid-column: 2/3;
+	grid-row: 1/2
+}
+
+#ig-side-bar-box-pic3{
+	grid-column: 3/4;
+	grid-row: 1/2
+}
+
+#ig-side-bar-box-pic4{
+	grid-column: 1/2;
+	grid-row: 2/3 ;
+}
+
+#ig-side-bar-box-pic5{
+	grid-column: 2/3;
+	grid-row: 2/3
+}
+
+#ig-side-bar-box-pic6{
+	grid-column: 3/4;
+	grid-row: 2/3
+}
+
+#ig-side-bar-box-pic7{
+	grid-column: 1/2;
+	grid-row: 3/4 ;
+}
+
+#ig-side-bar-box-pic8{
+	grid-column: 2/3;
+	grid-row: 3/4 ;
+}
+
+#ig-side-bar-box-pic9{
+	grid-column: 3/4;
+	grid-row: 3/4 ;
+}
+
+#ig-side-bar-box i{
+	position: absolute;
+    z-index: 1;
+}
+
+#ig-side-bar-box img{
+	position: relative;
+}
+
+#ig-sidebar-btn{
+	grid-column: 1/2;
+	grid-row: 6/7;
+	background: #408bd1;
+	border-radius:3px;
 }
