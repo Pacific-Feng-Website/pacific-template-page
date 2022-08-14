@@ -34,3 +34,11 @@
 		grid-row: 4/5;
 	}
 }
+
+@media only screen and (max-width: 830px){
+	#commemtBoard{
+		display: grid;
+		grid-template-columns: 0.1fr 1fr 0.1fr ;
+		grid-template-rows: 50px 100px 1fr  ;
+	}
+}

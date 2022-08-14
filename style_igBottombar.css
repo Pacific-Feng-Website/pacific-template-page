@@ -89,3 +89,67 @@
 		grid-row: 5/6;
 	}
 }
+
+@media only screen and (max-width: 950px){
+	#igBottomBar{
+		display: grid;
+		grid-template-columns: 1fr 1100px 1fr;
+		grid-template-rows: 15px 100px 5px 1fr 60px;
+	}
+}
+
+@media only screen and (max-width: 825px){
+	
+	#ig-bottom-bar-name h4{
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	
+	#igBottomBar{
+		display: grid;
+		grid-template-columns: 1fr 1100px 1fr;
+		grid-template-rows: 10px 85px 2px 1fr 60px;
+	}
+}
+
+@media only screen and (max-width: 679px){
+	
+	#ig-bottom-bar-name h4{
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 610px){
+	
+	#igBottomBar{
+		display: grid;
+		grid-template-columns: 1fr 1100px 1fr;
+		grid-template-rows: 10px 50px 5px 1fr 44px;
+	}
+	
+	#ig-bottom-bar-name h4{
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	
+	#igBottomBar{
+		display: grid;
+		grid-template-columns: 1fr 1100px 1fr;
+		grid-template-rows: 10px 50px 5px 1fr 30px;
+	}
+	
+	#ig-bottom-bar-name h4{
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 520px){
+	
+	#ig-bottom-bar-name h4{
+		font-size: 20px;
+	}
+}
