@@ -1,4 +1,9 @@
 #footerPage{
+	grid-column: 1/6;
+	grid-row: 6/7;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;

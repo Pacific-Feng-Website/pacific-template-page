@@ -11,10 +11,10 @@
 
 #mainContent{
 	grid-column: 2/3;
-	grid-row: 1/5;
+	grid-row: 1/2;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 80px 100px 30px 570px 30px 20px 20px 15260px; /*共16180px*/
+	grid-template-rows: 80px 100px 30px 570px 30px 20px 20px 1fr; /*共16180px*/
 }
 
 #topic{

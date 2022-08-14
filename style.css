@@ -1,5 +1,5 @@
 #main{
 	display: grid;
 	grid-template-columns: 0.95fr 750px 0.15fr 300px 0.95fr;
-	grid-template-rows: 820px 560px 500px 14300px 940px 390px 1fr; /*self-intro、ig-sideBar、fb-sidebar、main-content、related-post、subscription、comment*/
+	/*grid-template-rows: 820px 560px 500px 14300px 940px 390px 1fr; /*self-intro、ig-sideBar、fb-sidebar、main-content、related-post、subscription、comment*/
 }
