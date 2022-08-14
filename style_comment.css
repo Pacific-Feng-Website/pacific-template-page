@@ -1,11 +1,6 @@
-#bottomPart{
-	grid-column: 1/6;
-	grid-row: 4/5;
-}
-
 #commemtBoard{
-	/*grid-column: 1/6;
-	grid-row: 7/8;*/
+	grid-column: 1/2;
+	grid-row: 3/4;
 	display: grid;
 	grid-template-columns: 1fr 700px 1fr ;
 	grid-template-rows: 50px 100px 1fr  ;

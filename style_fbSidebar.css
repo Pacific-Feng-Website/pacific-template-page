@@ -1,5 +1,5 @@
 #fbSideBar{
-	grid-column: 4/5;
+	grid-column: 1/2;
 	grid-row: 3/4;
 	display: grid;
 	grid-template-columns: 1fr;

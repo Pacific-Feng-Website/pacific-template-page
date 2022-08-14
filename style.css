@@ -1,5 +1,28 @@
 #main{
 	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr; /*self-intro、ig-sideBar、fb-sidebar、main-content、related-post、subscription、comment*/
+}
+
+#main-top{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	display: grid;
 	grid-template-columns: 0.95fr 750px 0.15fr 300px 0.95fr;
-	/*grid-template-rows: 820px 560px 500px 14300px 940px 390px 1fr; /*self-intro、ig-sideBar、fb-sidebar、main-content、related-post、subscription、comment*/
+	grid-template-rows: 1fr;
+}
+
+#main-top-left{
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+#main-top-right{
+	grid-column: 4/5;
+	grid-row: 1/2;
+}
+
+#main-bottom{
+	grid-column: 1/2;
+	grid-row: 2/3;
 }
