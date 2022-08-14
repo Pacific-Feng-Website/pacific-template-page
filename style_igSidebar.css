@@ -124,6 +124,12 @@
 	color: black;
 }
 
+#ig-bottom-bar-box .fa-image{
+	color: white;
+	font-size: 10px;
+	margin: 10px;
+}
+
 @media only screen and (max-width: 1100px){
 	#igSideBar{
 		display: none !important;

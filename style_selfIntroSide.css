@@ -1,9 +1,9 @@
-#selfIntro-side img{
+#selfIntroSide img{
 	width: 95%;
 	height: auto;
 }
 
-#selfIntro-side{
+#selfIntroSide{
 	grid-column: 1/2;
 	grid-row: 1/2;
 	display: grid;
@@ -27,7 +27,7 @@
 #self-intro-side-picture{
 	grid-column: 1/2;
 	grid-row: 4/5;
-	display:flex;
+	display: flex;
 	justify-content: center;
 }
 
@@ -45,8 +45,10 @@
 	line-height: 25px;
 }
 
-@media only screen and (max-width: 100px){
-	#selfIntro-side{
+@media only screen and (max-width: 1100px){
+	
+	#selfIntroSide{
 		display: none !important;
 	}
+	
 }

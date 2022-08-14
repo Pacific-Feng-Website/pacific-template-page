@@ -6,11 +6,12 @@
 	font-family: 'Noto Sans TC', sans-serif ;
 }
 
-nav header, #mainContent h1, #mainContent h2, .siteIntro a, .siteIntro p, #relatedPost h4, #subscriptionBoard h4, #self-intro-name h3,#self-intro-text p, #commemt-box-topic h4{
+nav header, #mainContent h1, #mainContent h2, .siteIntro a, .siteIntro p, #relatedPost h4, #subscriptionBoard h4, #self-intro-name h3, #self-intro-text p, 
+#commemt-box-topic h4, #self-intro-bottom-name h3, #self-intro-bottom-intro p{
 	font-family: 'Noto Serif TC', serif !important;
 }
 
-#ig-bottom-bar-name h4{
+#ig-bottom-bar-name h4, #self-intro-bottom-name h3{
 	font-family: 'La Belle Aurore', cursive !important;
 }
 
