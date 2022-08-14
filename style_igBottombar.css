@@ -11,7 +11,7 @@
 	grid-row: 4/5;
 	display: grid;
 	grid-template-columns: 1fr 1100px 1fr;
-	grid-template-rows: 50px 100px 30px 1fr 30px 50px;
+	grid-template-rows: 50px 100px 30px 1fr 30px 10px 50px;
 	position:relative;
 	background: #ecd5cd;
 }
@@ -83,7 +83,7 @@
 
 #ig-bottom-bar-btn{
 	grid-column: 1/4 ;
-	grid-row: 5/6 ;
+	grid-row: 6/7 ;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -95,6 +95,9 @@
 	align-items: center;
 	background: black;
 	color: white;
+	height: 38px;
+    width: 170px;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 1171px){
@@ -113,7 +116,7 @@
 @media only screen and (max-width: 950px){
 	#igBottomBar{
 		display: grid;
-		grid-template-rows: 15px 100px 5px 1fr 30px 60px;
+		grid-template-rows: 15px 100px 5px 1fr 30px 10px 60px;
 	}
 }
 
@@ -128,7 +131,7 @@
 	
 	#igBottomBar{
 		display: grid;
-		grid-template-rows: 10px 85px 2px 1fr 30px 60px;
+		grid-template-rows: 10px 85px 2px 1fr 30px 10px 60px;
 	}
 }
 
@@ -143,7 +146,7 @@
 	
 	#igBottomBar{
 		display: grid;
-		grid-template-rows: 10px 50px 5px 1fr 30px 44px;
+		grid-template-rows: 10px 50px 5px 1fr 30px 10px 44px;
 	}
 	
 	#ig-bottom-bar-name h4{
@@ -155,7 +158,7 @@
 	
 	#igBottomBar{
 		display: grid;
-		grid-template-rows: 10px 50px 5px 1fr 30px 30px;
+		grid-template-rows: 10px 50px 5px 1fr 30px 10px 30px;
 	}
 	
 	#ig-bottom-bar-name h4{
