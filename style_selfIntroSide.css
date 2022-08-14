@@ -8,7 +8,7 @@
 	grid-row: 1/2;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 210px 40px 10px 280px 30px 1fr;
+	grid-template-rows: 210px 55px 10px 280px 30px 1fr;
 }
 
 #self-intro-side-name{
@@ -20,8 +20,8 @@
 
 #self-intro-side-name h3{
 	letter-spacing: 4px;
-	font-size: 24px;
-	font-weight: 300;
+	font-size: 30px;
+    font-weight: 600;
 }
 
 #self-intro-side-picture{
