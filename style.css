@@ -5,7 +5,7 @@
 }
 
 #main-top{
-	grid-column: 1/2;
+	grid-column: 1/6;
 	grid-row: 1/2;
 	display: grid;
 	grid-template-columns: 0.95fr 750px 0.15fr 300px 0.95fr;
@@ -23,6 +23,6 @@
 }
 
 #main-bottom{
-	grid-column: 1/2;
+	grid-column: 1/6;
 	grid-row: 2/3;
 }
