@@ -101,6 +101,12 @@
 	position: relative;
 }
 
+#ig-side-bar-box .fa-image{
+	color: white;
+	font-size: 10px;
+	margin: 10px;
+}
+
 #ig-sidebar-btn-box{
 	grid-column: 1/2;
 	grid-row: 6/7;
