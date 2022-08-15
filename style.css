@@ -11,8 +11,6 @@ nav header, #mainContent h1, #mainContent h2, .siteIntro a, .siteIntro p, #relat
 #self-intro-side-name h3, #self-intro-bottom-name h3, #ig-bottom-bar-name h4, #footer-main-content p{
 	font-family: 'La Belle Aurore', cursive !important;
 }
-
-
 /* FONT.CSS END */
 
 
@@ -470,7 +468,7 @@ nav .icon-list{
 	content: "";
 	width: 100%;
 	height: 1px;
-	background-image: url("https://www.theblondeabroad.com/wp-content/themes/tba/images/Category-Menu-hr.png");
+	background-image: url("https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/pacfeng-line.png");
 	position: absolute;
 	left: 0;
 	bottom: 0%;
