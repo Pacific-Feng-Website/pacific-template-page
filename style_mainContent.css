@@ -14,7 +14,7 @@
 	grid-row: 1/2;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 80px 100px 30px 570px 30px 20px 20px 1fr 80px; /*共16180px*/
+	grid-template-rows: 80px 100px 30px 1fr 80px; /*共16180px*/
 }
 
 #topic{
@@ -43,7 +43,7 @@
 	width: 100%;
 }
 
-#top-main-picture{
+/*#top-main-picture{
 	grid-column: 2/3;
 	grid-row: 4/5;
 	display: flex;
@@ -54,9 +54,9 @@
 #top-information{
 	grid-column: 2/3;
 	grid-row: 6/7;
-}
+}*/
 
-#top-information .post-time{
+#post-time{
 	font-size: 13px;
 	font-weight: 400;
 	color: #EACACB;
@@ -66,7 +66,7 @@
 	margin-bottom: 15px;
 }
 
-#top-information .post-time:hover{
+#post-time:hover{
 	color: #A2B59F;
 	transition: all 0.5s ease;
 }
@@ -125,7 +125,7 @@
 	#mainContent{
 		display: grid;
 		grid-template-columns: 0.05fr 1fr 0.05fr;
-		grid-template-rows: 80px 120px 30px 450px 30px 20px 20px 1fr 80px;
+		grid-template-rows: 80px 100px 30px 1fr 80px;
 	}
 	
 	#topic{
