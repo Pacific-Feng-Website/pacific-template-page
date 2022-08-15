@@ -92,16 +92,16 @@
 	grid-row: 3/4 ;
 }
 
-#ig-sidebar-btn-box i{
+#ig-sidebar-photo i{
 	position: absolute;
     z-index: 1;
 }
 
-#ig-sidebar-btn-box img{
+#ig-sidebar-photo img{
 	position: relative;
 }
 
-#ig-sidebar-btn-box .fa-image{
+#ig-sidebar-photo .fa-image{
 	color: white;
 	font-size: 10px;
 	margin: 10px;
