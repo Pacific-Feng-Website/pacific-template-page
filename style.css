@@ -1,7 +1,5 @@
 /* FONT.CSS BEGIN */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap');  /*font-family: 'Noto Sans TC', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&display=swap'); /*font-family: 'Noto Serif TC', serif;*/
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap'); /*font-family: 'La Belle Aurore', cursive;*/
+
 
 *{
 	font-family: 'Noto Sans TC', sans-serif ;
