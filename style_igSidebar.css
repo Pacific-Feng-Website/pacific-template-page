@@ -148,7 +148,7 @@
 	align-items: center;
 	width: 175px;
     height: 41px;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 }
 
 #ig-sidebar-btn:hover{

@@ -108,13 +108,13 @@
 	justify-content: center;
 	align-items: center;
 	background: var(--igBottomBarBtnColor);
-    color: white;
+    color: #73736F;
 	height: 43px;
     width: 195px;
     border-radius: 5px;
 	font-size: 14px;
     letter-spacing: 2px;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 }
 
 #ig-bottom-bar-btn p:hover{
