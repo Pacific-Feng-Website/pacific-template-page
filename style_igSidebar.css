@@ -1,3 +1,8 @@
+:root{
+	--igSideBarBtnColor: #f6ebe8;
+	--igSideBarBtnColorHover: #edd7d2;
+}
+
 #igSideBar a{
 	text-decoration: none;
 }
@@ -136,7 +141,7 @@
 }
 
 #ig-sidebar-btn{
-	background: #f6ebe8;
+	background: var(--igSideBarBtnColor);
     border-radius: 5px;
 	display: flex;
 	justify-content: center;
@@ -147,7 +152,7 @@
 }
 
 #ig-sidebar-btn:hover{
-	background: #edd7d2;
+	background: var(--igSideBarBtnColorHover);
 }
 
 #ig-sidebar-btn-box p{

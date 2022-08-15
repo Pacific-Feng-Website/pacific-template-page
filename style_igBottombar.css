@@ -1,3 +1,8 @@
+:root{
+	--igBottomBarBtnColor: #f6ebe8;
+	--igBottomBarBtnColorHover: #d9a89d;
+}
+
 #igBottomBar img{
 	width: 100%;
 }
@@ -103,7 +108,7 @@
 	justify-content: center;
 	align-items: center;
 	background: #f6ebe8;
-    color: #73736F;
+    color: var(--igBottomBarBtnColor);
 	height: 43px;
     width: 195px;
     border-radius: 5px;
@@ -113,7 +118,7 @@
 }
 
 #ig-bottom-bar-btn p:hover{
-	background: #edd7d2;
+	background: var(--igBottomBarBtnColorHover);
 }
 
 @media only screen and (max-width: 1171px){
@@ -136,56 +141,3 @@
 		grid-template-rows: 50px 100px 30px 1fr 25px 100px 20px;
 	}
 }
-/*
-@media only screen and (max-width: 825px){
-	
-	#ig-bottom-bar-name h4{
-		font-size: 35px;
-	}
-}
-
-@media only screen and (max-width: 800px){
-	
-	#igBottomBar{
-		display: grid;
-		grid-template-rows: 15px 100px 5px 1fr 30px 20px 60px;
-	}
-}
-
-@media only screen and (max-width: 679px){
-	
-	#ig-bottom-bar-name h4{
-		font-size: 30px;
-	}
-}
-
-@media only screen and (max-width: 610px){
-	
-	#igBottomBar{
-		display: grid;
-		grid-template-rows: 15px 100px 5px 1fr 30px 20px 44px;
-	}
-	
-	#ig-bottom-bar-name h4{
-		font-size: 24px;
-	}
-}
-
-@media only screen and (max-width: 550px){
-	
-	#igBottomBar{
-		display: grid;
-		grid-template-rows: 15px 100px 5px 1fr 30px 20px 30px;
-	}
-	
-	#ig-bottom-bar-name h4{
-		font-size: 22px;
-	}
-}
-
-@media only screen and (max-width: 520px){
-	
-	#ig-bottom-bar-name h4{
-		font-size: 20px;
-	}
-}*/
