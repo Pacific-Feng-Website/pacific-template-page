@@ -58,8 +58,37 @@
 	transition: color 0.4 ease ;
 }
 
-.socials a:hover i{
-	color: aqua;
+.socials .fa-facebook{
+	color: white;
+	font-weight: 100;
+	grid-column: 2/3;
+}
+
+.socials .fa-facebook:hover{
+	color: #0165E1;
+	transition: 0.3s;
+}
+	
+.socials .fa-instagram{
+	color: white;
+	font-weight: 100;
+	grid-column: 3/4;
+}
+
+.socials .fa-instagram:hover{
+	color: #E1306C;
+	transition: .3s;
+}
+
+.socials .fa-envelope{
+	color: white;
+	font-weight: 100;
+	grid-column: 4/5;
+}
+
+.socials .fa-envelope:hover{
+	color: #0FB5EE;
+	transition: .3s;
 }
 
 #footer-bottom{
