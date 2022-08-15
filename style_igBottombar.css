@@ -93,13 +93,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: black;
-	color: white;
+	background: #f6ebe8;
+    color: #73736F;
 	height: 43px;
-    width: 180px;
+    width: 195px;
     border-radius: 5px;
 	font-size: 14px;
     letter-spacing: 2px;
+	transition: all 0.3s ease;
+}
+
+#ig-bottom-bar-btn p:hover{
+	background: #edd7d2;
 }
 
 @media only screen and (max-width: 1171px){

@@ -1,3 +1,8 @@
+:root {
+	--navMainBackgroundColor: #80D1C8;
+	--navHoverBackgroundColor: #e9cdc7;
+}
+
 *{
 	margin:0 ;
 	padding: 0;
@@ -5,7 +10,7 @@
 }
 
 nav{
-	background: /*#242526*/#80D1C8;
+	background: var(--navMainBackgroundColor);
 	position: Sticky;
 	width: 100%;
 	z-index: 999;
@@ -15,8 +20,6 @@ nav{
 }
 
 nav .wrapper{
-	/*max-width: 1300px;*/
-	/*padding: 0 30px;*/
 	margin: auto 5% auto 5%;
 	display: flex;
 	align-items: center;
@@ -31,13 +34,6 @@ nav li{
 .wrapper .nav-links{
 	display: inline-flex;
 }
-
-/*.wrapper .logo img{
-	width: 250px ;
-	height: 35px;
-	display: flex;
-	align-items: center;
-}*/
 
 .nav-links li{
 	margin-right: 30px;
@@ -55,11 +51,11 @@ nav li{
 }
 
 .nav-links li a:hover{
-	background: #3A3B3C ;
+	background: var(--navHoverBackgroundColor) ;
 }
 
 .nav-links .drop-menu{
-	background: #242526;
+	background: var(--navMainBackgroundColor);
 	width: 180px;
 	top: 85px;
 	line-height: 45px;
@@ -100,7 +96,7 @@ nav li{
 .mega-menu{
 	position: absolute;
 	top: 85px;
-	background: #242526;
+	background: var(--navMainBackgroundColor);
 	width: 100%;
 	left: 0;
 	padding: 0 30px;
@@ -109,12 +105,11 @@ nav li{
 }
 
 .mega-menu .mega-menu-content{
-	background: #242526;
+	background: var(--navMainBackgroundColor);
 	padding: 25px 20px;
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 
 .mega-menu .mega-menu-content div:nth-child(1){
@@ -128,13 +123,13 @@ nav li{
 }
 
 .mega-menu-content .row img{
-	width: 200px;
-	height: 200px;
+	width: 10px;
+	height: 10px;
 	object-fit: cover;
 }
 
 .mega-menu-content .row header{
-	color: #f2f2f2;
+	color: white;
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 5px;
@@ -156,7 +151,7 @@ nav li{
 
 .row .mega-links li a{
 	padding: 0 20px;
-	color: #d9d9d9;
+	color: white;
 	font-size: 16px;
 	display: block;
 }
@@ -239,14 +234,13 @@ nav .icon-list{
 		height: 100vh;
 		width: 100%;
 		max-width: 350px;
-		background: #242526;
+		background: var(--navMainBackgroundColor);
 		display: block;
 		top: 0;
 		left: -100%;
 		overflow-y: auto;
 		line-height: 50px;
 		padding: 50px 10px;
-		box-shadow: 0 15px 15px rgba(0,0,0,0.15);
 	}
 	
 	
@@ -341,13 +335,13 @@ nav .icon-list{
 	}
 	
 	.nav-links .mobile-item:hover{
-		background: #3A3B3C;
+		background: var(--navHoverBackgroundColor);
 	}
 	
 	.mega-menu{
 	position: static;
 	top: 65px;
-	background: #242526;
+	background: var(--navMainBackgroundColor);
 	width: 100%;
 	opacity:1 ;
 	visibility: visible;
@@ -358,7 +352,7 @@ nav .icon-list{
 	}
 
 	.mega-menu .mega-menu-content{
-		background: #242526;
+		background: var(--navMainBackgroundColor);
 		flex-direction: column;
 		padding: 20px 20px 0 20px;
 	}
