@@ -43,19 +43,6 @@
 	width: 100%;
 }
 
-/*#top-main-picture{
-	grid-column: 2/3;
-	grid-row: 4/5;
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-}
-
-#top-information{
-	grid-column: 2/3;
-	grid-row: 6/7;
-}*/
-
 #post-time{
 	font-size: 13px;
 	font-weight: 400;
