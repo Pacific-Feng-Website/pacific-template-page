@@ -11,7 +11,7 @@
 	grid-row: 2/3;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 100px 100px 10px 1fr 20px 50px;
+	grid-template-rows: 100px 100px 10px 1fr 20px /*50px*/;
 }
 
 #ig-sidebar-name{
@@ -104,10 +104,10 @@
 #ig-sidebar-photo .fa-image{
 	color: white;
 	font-size: 10px;
-	margin: 10px;
+	margin: 6px;
 }
 
-#ig-sidebar-btn-box{
+/*#ig-sidebar-btn-box{
 	grid-column: 1/2;
 	grid-row: 6/7;
 	display: flex;
@@ -128,13 +128,7 @@
 
 #ig-sidebar-btn-box p{
 	color: black;
-}
-
-#ig-bottom-bar-box .fa-image{
-	color: white;
-	font-size: 10px;
-	margin: 10px;
-}
+}*/
 
 @media only screen and (max-width: 1100px){
 	#igSideBar{
