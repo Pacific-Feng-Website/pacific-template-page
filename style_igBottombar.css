@@ -107,8 +107,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #f6ebe8;
-    color: var(--igBottomBarBtnColor);
+	background: var(--igBottomBarBtnColor);
+    color: white;
 	height: 43px;
     width: 195px;
     border-radius: 5px;
