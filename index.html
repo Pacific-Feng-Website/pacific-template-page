@@ -61,15 +61,15 @@
 		<link rel="preload" href="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/pacific-feng-logo.jpg" as="image" > <!-- preload logo.jpg -->
 		
 		
-		<!-- Java script library start -->
-		<script src="https://kit.fontawesome.com/df50142789.js" crossorigin="anonymous" defer="defer"></script> <!-- Font Awesome icons -->
+		<!-- Java script library start (NO REFER) -->
+		<!--<script src="https://kit.fontawesome.com/df50142789.js" crossorigin="anonymous" defer="defer"></script> <!-- Font Awesome icons -->
 		<!--<div id="fb-root"></div><script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v14.0&appId=739925347070306&autoLogAppEvents=1" nonce="AM88LEJC"></script> <!-- Facebook sidebar implementation -->
-		<div id="fb-root"></div><script defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v14.0&appId=739925347070306&autoLogAppEvents=1" nonce="AM88LEJC"></script> <!-- Facebook sidebar implementation -->
+		<div id="fb-root"></div><!-- Facebook sidebar implementation -->
 		<script src="https://unpkg.com/lazysizes@5.3.2/lazysizes.js"></script> <!-- The lazyload function -->
 		
 		
 		<!-- google font introduction with webfontloader -->
-		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer="defer"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>
 			WebFont.load({
 				google: {
@@ -597,7 +597,7 @@
 							</form>
 						</div>
 						
-						<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js' defer="defer"></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+						<!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js' defer="defer"></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
 						
 					</div>
 				</div>
@@ -618,7 +618,7 @@
 								<iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
 							</noscript>
 						</div>
-						<script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js" defer="defer"></script>
+						<!-- <script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js" defer="defer"></script> -->
 						<script>
 							var rb_owner_key = "9f0fa28b-1ac0-11ed-9ff4-83aad5f5c937";
 							var thread_uri = window.location.href;
@@ -736,6 +736,23 @@
 			<!-- MAIN BOTTOM END -->
 			
 		</section>
+		
+		<!-- defer loading.js BEGIN -->
+		<script type="text/javascript">
+			function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "defer.js";
+			document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else
+			window.onload = downloadJSAtOnload;
+		</script>
+		<!-- defer loading.js END -->
+		
 	</body>
 
 </html>
