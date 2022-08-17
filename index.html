@@ -50,21 +50,16 @@
 		
 		<!-- Library inclusion start -->
 		
-		<meta charset="utf-8" /> <!-- The site is encoded with UTF-8 -->
-		<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- For RWD use (especilly mobile) -->
+		<meta charset="utf-8"> <!-- The site is encoded with UTF-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- For RWD use (especilly mobile) -->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> <!-- jQury Library -->
 		
 		
 		<!-- Self-file (.css、.html ...) inclusion start -->
 		
-		<link charset="utf-8" href="style.css" rel="stylesheet" type="text/css" /> <!-- To include .css of the ALL part -->
+		<link charset="utf-8" href="style.css" rel="stylesheet" type="text/css"> <!-- To include .css of the ALL part -->
+		<link rel="preload" href="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/pacific-feng-logo.jpg" as="image" > <!-- preload logo.jpg -->
 		
-		
-		<!-- Preload files -->
-		<link rel="preload" href="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/pacific-feng-logo.jpg" as="image" /> <!-- logo -->
-		<link rel="preload" href="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old-cover.JPG" as="image" /> <!-- top pic -->
-		<link rel="preload" href="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/my-picture.jpg" as="image" /> <!-- my pic -->
-		  
 		
 		<!-- Java script library start -->
 		<script src="https://kit.fontawesome.com/df50142789.js" crossorigin="anonymous" defer="defer"></script> <!-- Font Awesome icons -->
@@ -75,31 +70,15 @@
 		<!-- Title and meta descriptions start -->
 		
 		<title>Pacific峰的部落格</title>
-		<meta name="description" content="舊鐵橋濕地生態公園位於屏東縣屏東市以及高雄市大樹區的交界處，範圍由斜張橋到高屏大橋的高屏溪右岸，是一個十分遼闊的生態園區。舊鐵橋濕地生態公園具有豐富的動、植物生態，不但是一個親子遊玩的好去處，更是攝影者最喜愛的取景地。翠綠一望無際的草原、翩翩起舞的蝴蝶、緩緩駛過的火車以及如山似畫的的彩霞，讓舊鐵橋濕地生態公園成為了屏東境內最知名的景點之一。" />
+		<meta name="description" content="舊鐵橋濕地生態公園位於屏東縣屏東市以及高雄市大樹區的交界處，範圍由斜張橋到高屏大橋的高屏溪右岸，是一個十分遼闊的生態園區。舊鐵橋濕地生態公園具有豐富的動、植物生態，不但是一個親子遊玩的好去處，更是攝影者最喜愛的取景地。翠綠一望無際的草原、翩翩起舞的蝴蝶、緩緩駛過的火車以及如山似畫的的彩霞，讓舊鐵橋濕地生態公園成為了屏東境內最知名的景點之一。">
 		
 		
 		<!-- icon -->
 		
-		<link href="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/icon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link href="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/icon.ico" rel="shortcut icon" type="image/x-icon">
 		
 		
 		<!-- load external .html -->
-		<script>
-		  $(function(){
-			$('#navigationBar').load("navigationBar.html");
-			$('#topLogoBar').load("topLogoBar.html");
-			$('#mainContent').load("mainContent.html");
-			$('#selfIntroSide').load("selfIntroSide.html");
-			$('#igSideBar').load("igSideBar.html");
-			$('#fbSideBar').load("fbSideBar.html");
-			$('#relatedPost').load("relatedPost.html");
-			$('#selfIntroBottom').load("selfIntroBottom.html");
-			$('#subscriptionBoard').load("subscriptionBoard.html");
-			$('#commemtBoard').load("commemtBoard.html");
-			$('#igBottomBar').load("igBottomBar.html");
-			$('#footerPage').load("footerPage.html");
-		  });
-		</script>
 		
 		
 	</head>
@@ -107,11 +86,137 @@
 	<body style="background-color:#">
 		
 		<!-- NAVIGATION BAR BEGIN-->
-		<nav id="navigationBar"></nav>
+		<nav id="navigationBar"> <!-- For navigationBar.html -->
+			<div class="wrapper">
+			
+				<!---<div class="logo">
+					<a href="https://pacfeng.com">
+						 <img src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pacific.png" alt="部落格首頁照片">
+					</a>
+				</div> -->
+				
+				<input type="radio" name="slide" id="cancel-btn">
+				<input type="radio" name="slide" id="menu-btn">
+				
+				<ul class="nav-links">
+					<label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times"></i></label> <!-- for the RWD cancel icon -->
+					<li><a href="https://pacificfeng.com/america-tour-homepage/">關於我</a></li>
+					
+					<li><a href="#" class="desktop-item">國外旅遊</a>
+						<input type="checkbox" id="showDrop1">
+						<label for="showDrop1" class="mobile-item">國外旅遊</label>
+						<ul class="drop-menu">
+							<li><a href="https://pacificfeng.com/america-tour-homepage/">美西自由行</a></li>
+						</ul> 
+					</li>
+						
+					<li><a href="#" class="desktop-item">國內旅遊</a>
+						<input type="checkbox" id="showMega1">
+						<label for="showMega1" class="mobile-item">國內旅遊</label>
+						<div class="mega-menu">
+							<div class="mega-menu-content">
+								
+								<div class="row">  <!-- for the mega menu picture -->
+								</div>
+								
+								<div class="row">  <!-- mega menu list -->
+									<header><i class="fa fa-location-dot"></i>&nbsp;北部</header>
+									<ul class="mega-links">
+										<li><a href="#">基隆</a></li>
+										<li><a href="#">新北</a></li>
+										<li><a href="#">臺北</a></li>
+										<li><a href="#">桃園</a></li>
+										<li><a href="#">新竹</a></li>
+									</ul>
+								</div>
+								
+								<div class="row">  <!-- mega menu list -->
+									<header><i class="fa fa-location-dot"></i>&nbsp;中部</header>
+									<ul class="mega-links">
+										<li><a href="#">苗栗</a></li>
+										<li><a href="#">臺中</a></li>
+										<li><a href="#">南投</a></li>
+										<li><a href="#">彰化</a></li>
+										<li><a href="#">雲林</a></li>
+									</ul>
+								</div>
+								
+								<div class="row">  <!-- mega menu list -->
+									<header><i class="fa fa-location-dot"></i>&nbsp;南部</header>
+									<ul class="mega-links">
+										<li><a href="#">嘉義</a></li>
+										<li><a href="#">臺南</a></li>
+										<li><a href="#">高雄</a></li>
+										<li><a href="#">屏東</a></li>
+										<li><a href="#">澎湖</a></li>
+									</ul>
+								</div>
+								
+								<div class="row">  <!-- mega menu list -->
+									<header><i class="fa fa-location-dot"></i>&nbsp;東部</header>
+									<ul class="mega-links">
+										<li><a href="#">臺東</a></li>
+										<li><a href="#">花蓮</a></li>
+										<li><a href="#">宜蘭</a></li>
+									</ul>
+								</div>
+								
+								<div class="row">  <!-- mega menu list -->
+									<header><i class="fa fa-location-dot"></i>&nbsp;離島</header>
+									<ul class="mega-links">
+										<li><a href="#">澎湖</a></li>
+										<!-- <li><a href="#">綠島</a></li>
+										<li><a href="#">馬祖</a></li>
+										<li><a href="#">金門</a></li> -->
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+
+					</li>
+					
+					<li><a href="#" class="desktop-item">科技新知</a>
+						<input type="checkbox" id="showDrop2">
+						<label for="showDrop2" class="mobile-item">科技新知</label>
+						<ul class="drop-menu">
+							<li><a href="https://pacificfeng.com/america-tour-homepage/">常見資訊問題</a></li>
+						</ul> 
+					</li>
+					
+					<li><a href="#" class="desktop-item">競賽題目</a>
+						<input type="checkbox" id="showDrop3">
+						<label for="showDrop3" class="mobile-item">競賽題目</label>
+						<ul class="drop-menu">
+							<li><a href="https://pacificfeng.com/america-tour-homepage/">IC Contest</a></li>
+						</ul> 
+					</li>
+					
+					
+				</ul>
+				
+				<div class="icon-list">
+				
+				<!-- for fb coneection -->
+				<a href="https://www.facebook.com/PacFeng" target="_blank" id="fb"><i class="fa-brands fa-facebook-f"></i></a>
+				<!-- for ig coneection -->
+				<a href="https://www.instagram.com/pacific_feng_blog/" target="_blank" id="ig"><i class="fa-brands fa-instagram"></i></a>
+				<!-- for mail coneection -->
+				<a href="https://mail.google.com/mail/u/0/?fs=1&to=pacfeng@gmail.com&tf=cm&su=Pacific峰的部落格 讀者來信了喔!!" target="_blank" id="mail"><i class="fa-solid fa-envelope"></i></a>
+				
+				</div>
+				
+					<label for="menu-btn" class=" btn menu-btn"><i class="fas fa-bars"></i></label> <!-- for the RWD bar icon -->
+			</div>
+		</nav>
 		<!-- NAVIGATION BAR END -->
 		
 		<!-- TOP LOGO BAR BEGIN -->
-		<div id="topLogoBar"></div>
+		<div id="topLogoBar"> <!-- For topLogoBar.html -->
+			<div class="logo-area">
+				<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/pacific-feng-logo.jpg" alt="部落格首頁照片">
+			</div>
+		</div>
 		<!-- TOP LOGO BAR END -->
 		
 		<section id="main">
@@ -121,7 +226,91 @@
 				<div id="main-top-left">
 			
 					<!-- MAIN CONTENT OF THE PAGE BEGIN -->
-					<div id="mainContent"></div>
+					<div id="mainContent"> <!-- For mainContent.html -->
+					
+						<div id="topic">
+							<h1 class="main-topic">舊鐵橋濕地生態公園</h1> 
+							<h2 class="second-topic">〈歷經日治時期的鐵道建築，屏東最優美的歷史古蹟〉</h2>
+						</div>
+						
+						<div id="article">
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old-cover.JPG" alt="屏東舊鐵橋首頁照片">
+							<h3 id="post-time">2022-06-12▸屏東景點, 屏東市</h3>
+							<p>舊鐵橋濕地生態公園位於屏東縣屏東市以及高雄市大樹區的交界處，範圍由斜張橋到高屏大橋的高屏溪右岸，是一個十分遼闊的生態園區。</p>
+							<p>&nbsp;</p>
+							<p>舊鐵橋濕地生態公園具有豐富的動、植物生態，不但是一個親子遊玩的好去處，更是攝影者最喜愛的取景地。翠綠一望無際的草原、翩翩起舞的蝴蝶、緩緩駛過的火車以及如山似畫的的彩霞，讓舊鐵橋濕地生態公園成為了屏東境內最知名的景點之一。</p>
+							<p>&nbsp;</p>
+							
+							<div class="siteIntro">
+								<p style="font-size: 18px; font-weight:700; margin-bottom: 10px;"><i class="fa-solid fa-location-dot"></i>&ensp;景點資訊</p>
+								<p>景點名稱: 舊鐵橋濕地生態公園</p>
+								<a href="https://www.google.com/maps/dir//840%E9%AB%98%E9%9B%84%E5%B8%82%E5%A4%A7%E6%A8%B9%E5%8D%80%E7%AB%B9%E5%AF%AE%E8%B7%AF109%E8%99%9F%E8%88%8A%E9%90%B5%E6%A9%8B%E6%BF%95%E5%9C%B0%E7%94%9F%E6%85%8B%E5%85%AC%E5%9C%92/@23.3853331,119.910333,9z/data=!4m9!4m8!1m0!1m5!1m1!1s0x346e1a1ae5d7fb45:0x25ad1c6f5372bb92!2m2!1d120.426989!2d22.6623093!3e0" target="_blank">
+									<p style="display:inline;">景點地址: </p>
+									<p class="changeColor"> 屏東縣屏東市海堤路</p>
+								</a>
+								<p>營業時間: 24小時</p>
+							</div>
+							
+							<p>透過導航可以順利地到達舊鐵橋濕地生態公園的停車場。這邊的停車場很大，而且有特別設置機車區以及汽車區，因此不用擔心沒有位置喔~</p>
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old15.JPG" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<p>接著就順著走道一直走，就可以看到舊鐵橋啦~</p>
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old4.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<p>即使還沒有到舊鐵橋上面，光是在這邊的景色就已經美不勝收了!</p>
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old11.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old10.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old9.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old-19.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<p>在舊鐵橋的旁邊有一片磚頭砌成的小牆壁，上面有介紹這片溼地生態園區會出現的動植物，大家可以試著找找看他們在哪裡喔~</p>
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old5.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<p>要上去舊鐵橋的話可以選擇走樓梯或是搭乘電梯。舊鐵橋也有人數限制，但是要超過這個限制人數應該是有難度的~</p>
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old17.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old16.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<p>到了舊鐵橋上面，馬上就可以將整個溼地公園給一覽無遺了! 而且舊鐵橋算是一個很有特色的建築，在這邊拍照也是超漂亮的~ 時不時還會有火車緩緩駛過，更是這趟旅程更增添了一分色彩。</p>
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old6.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old2.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old1.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old7.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<p>接著我們就前往三窯瓦廠。這個景點只要過橋，再走一小段上坡路就可以到了!</p>
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old18.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old12.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old13.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<p>逛完這些之後，我們就開始返程了。再停車場旁邊有一塊很大的草皮，會有棒球隊的在那邊練習，看著他們開心的模樣，我也跟著愉悅了起來。在草地的中心有一棵大樹，十分的好拍照，大家可以來取景一下~</p>
+							<p>&nbsp;</p>
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old14.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							<p>&nbsp;</p>
+							<p>總結來說，舊鐵橋濕地生態公園是一個來屏東必玩的景點，有山有水，美麗如畫，豐富的動植物生態更是為這幅畫再添上了最完美的一筆。說舊鐵橋濕地生態公園是必來的景點，根本不為過吧~ 大家有機會一定要來這邊逛逛!</p>
+							<p>&nbsp;</p>
+						
+							<a href="" id="main-content-btn" target="_blank">
+								<p>點我回屏東旅遊首頁</p>
+							</a>
+
+						</div>	
+						
+					</div>
 					<!-- MAIN CONTENT OF THE PAGE END -->
 					
 				</div>
@@ -130,15 +319,124 @@
 				<!-- MAIN TOP RIGHT BEGIN -->
 				<div id="main-top-right">
 					<!-- SELF INTRO BEGIN -->
-					<div id="selfIntroSide"></div>
+					<div id="selfIntroSide">
+						
+						<div id="self-intro-side-name">
+							<h3>Pacific-Feng</h3>
+						</div>
+					
+						<div id="self-intro-side-picture">
+							<a href="#" target="_blank">
+								<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/my-picture.jpg" class="Pacific-Feng的照片">
+							</a>
+						</div>
+						
+						<div id="self-intro-side-text">
+							<p>現於清華大學就讀碩士班</p>
+							<p>喜愛旅行、品嘗美食</p>
+							<p>在平時忙碌的生活中 體驗一絲悠閒的滋味</p>
+							<p>珍惜平常的點點滴滴</p>
+							<p>紀錄日常生活</p>
+							<p>有朝一日可以再次回憶這段美好時光</p>
+							<p style="height: 15px; letter-spacing:10px;">&nbsp;</p>
+							<p style="font-weight:600;">旅遊 | 美食 | 科技 | 吃喝玩樂</p>
+						</div>
+					</div>
 					<!-- SELF INTRO END -->
 					
 					<!-- IG SIDE BAR BEGIN -->
-					<div id="igSideBar"></div>
+					<div id="igSideBar">
+					
+						<div id="ig-sidebar-name">
+							<a href="www.instagram.com/pacific-feng-blog" target="_blank">
+								<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/my-picture.jpg">
+								<h3>pacific-feng-blog</h3>
+							</a>
+						</div>
+						
+						<div id="ig-sidebar-photo">
+						
+							<div id="ig-side-bar-box-pic1">
+									<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+										<i class="fa fa-image"></i>
+										<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+									</a>
+							</div>
+							
+							<div id="ig-side-bar-box-pic2">
+									<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+										<i class="fa fa-image"></i>
+										<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+									</a>
+							</div>
+							
+							<div id="ig-side-bar-box-pic3">
+									<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+										<i class="fa fa-image"></i>
+										<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+									</a>
+							</div>
+							
+							<div id="ig-side-bar-box-pic4">
+									<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+										<i class="fa fa-image"></i>
+										<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+									</a>
+							</div>
+							
+							<div id="ig-side-bar-box-pic5">
+									<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+										<i class="fa fa-image"></i>
+										<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+									</a>
+							</div>
+							
+							<div id="ig-side-bar-box-pic6">
+									<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+										<i class="fa fa-image"></i>
+										<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+									</a>
+							</div>
+							
+							<div id="ig-side-bar-box-pic7">
+									<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+										<i class="fa fa-image"></i>
+										<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+									</a>
+							</div>
+							
+							<div id="ig-side-bar-box-pic8">
+									<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+										<i class="fa fa-image"></i>
+										<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+									</a>
+							</div>
+							
+							<div id="ig-side-bar-box-pic9">
+									<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+										<i class="fa fa-image"></i>
+										<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+									</a>
+							</div>
+						</div>
+						
+						 <div id="ig-sidebar-btn-box">
+							<a href="#" target="_blank">
+								<div id="ig-sidebar-btn">
+									<p><i class="fa-brands fa-instagram"></i>&nbsp;前往Instagram觀看</p>
+								</div>
+							</a>
+						</div>
+						
+					</div>
 					<!-- IG SIDE BAR END -->
 					
 					<!-- FB SIDE BAR BEGIN -->
-					<div id="fbSideBar"></div>
+					<div id="fbSideBar">
+						<div id="fb-sidebar-body">
+							<div class="fb-page" data-href="https://www.facebook.com/PacFeng/" data-tabs="timeline" data-width="300px" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PacFeng/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PacFeng/">Pacific峰的部落格</a></blockquote></div>
+						</div>
+					</div>
 					<!-- FB SIDE BAR END -->
 					
 				</div>
@@ -152,30 +450,278 @@
 			
 				
 				<!-- REALTED POST BEGIN -->
-				<div id="relatedPost"></div>
+				<div id="relatedPost">
+				
+					<div id="related-post-topic">
+						<h4>你可能會喜歡</h4>
+					</div>
+					
+					<!-- 第一個推薦文章 -->
+					<div id="related-post-pic1">
+						<a href="#" target="_blank">
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old12.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+						</a>
+					</div>
+					
+					
+					<div id="related-post-pic-name-frame1">
+						<a href="#" target="_blank">
+							<div id="related-post-pic-name1">
+								<h5>舊鐵橋濕地生態公園</h5>
+							</div>
+						</a>
+					</div>
+					
+					<!-- 第二個推薦文章 -->
+					<div id="related-post-pic2">
+						<a href="#" target="_blank">
+								<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old12.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							</a>
+					</div>
+					
+					<div id="related-post-pic-name-frame2">
+						<a href="#" target="_blank">
+							<div id="related-post-pic-name2">
+								<h5>舊鐵橋濕地生態公園</h5>
+							</div>
+						</a>
+					</div>
+						
+					<!-- 第三個推薦文章 -->
+					<div id="related-post-pic3">
+						<a href="#" target="_blank">
+								<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old12.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							</a>
+					</div>
+					
+					<div id="related-post-pic-name-frame3">
+						<a href="#" target="_blank">
+							<div id="related-post-pic-name3">
+								<h5>舊鐵橋濕地生態公園</h5>
+							</div>
+						</a>
+					</div>
+					
+					<!-- 第四個推薦文章 -->
+					<div id="related-post-pic4">
+						<a href="#" target="_blank">
+								<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pingtung/%E8%88%8A%E9%90%B5%E6%A9%8B/old12.JPG" class="photo" alt="舊鐵橋濕地生態公園照片">
+							</a>
+					</div>
+					
+					<div id="related-post-pic-name-frame4">
+						<a href="#" target="_blank">
+							<div id="related-post-pic-name4">
+								<h5>舊鐵橋濕地生態公園</h5>
+							</div>
+						</a>
+					</div>
+							
+				</div>
 				<!-- REALTED POST END -->
 				
 				<!-- SELF INTRO BOTTOM BEGIN -->
-				<div id="selfIntroBottom"></div>
+				<div id="selfIntroBottom">
+
+					<div id="self-intro-bottom-pic">
+						<a href="#" target="_blank">
+							<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/my-picture.jpg" alt="Pacific-Feng的照片">
+						</a>
+					</div>
+					
+					<div id="self-intro-bottom-name">
+						<h3>Pacific-Feng</h3>
+					</div>
+					
+					<div id="self-intro-bottom-intro">
+						<p>現於清華大學就讀碩士班</p>
+						<p>喜愛旅行、品嘗美食</p>
+						<p>在平時忙碌的生活中</p>
+						<p>體驗一絲悠閒的滋味</p>
+						<p>珍惜平常的點點滴滴</p>
+						<p>紀錄日常生活</p>
+						<p>有朝一日</p>
+						<p>可以再次回憶這段美好時光</p>
+						<p style="height: 15px; letter-spacing:10px;">&nbsp;</p>
+						<p style="font-weight:600;">旅遊 · 美食 · 科技 · 吃喝玩樂</p>
+					</div>
+					
+					<div id="self-intro-bottom-contact">
+						<a href="#" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;Instagram</a>
+						<a href="#" target="_blank"><i class="fa fa-instagram"></i>&nbsp;&nbsp;Facebook</a>
+					    <a href="#" target="_blank"><i class="fa fa-envelope"></i>&nbsp;&nbsp;My Mail</a>
+					</div>
+				</div>
 				<!-- SELF INTRO BOTTOM END -->
 				
 				
 				<!-- SUBSCRIPTION BOARD BEGIN -->
-				<div id="subscriptionBoard"></div>
+				<div id="subscriptionBoard">
+					<div id="subscription-box-topic">	
+						<h4>獲取最新消息</h4>
+					</div>
+						
+					<div id="subscription-box">	
+						<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+						
+						<style type="text/css">
+							#mc_embed_signup{background:#F0EFED; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+						</style>
+						
+						<div id="mc_embed_signup">
+							<form action="https://github.us18.list-manage.com/subscribe/post?u=caed2e833e31476415220af13&amp;id=521332be4a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll">
+									<h5 style="font-size: 1.4em !important; padding-top: 10px !important; padding-bottom: 25px !important; font-weight: 500 !important; letter-spacing: 0.8px !important;">輸入Email以接收最新資訊!</h5>
+									<div class="mc-field-group" style="padding-bottom: 10px !important;">
+										<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="請輸入您的電子信箱..">
+									</div>
+									<div id="mce-responses" class="clear foot">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none">感謝訂閱!之後定期都會寄送最新消息給您喔!</div>
+									</div>
+									<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_caed2e833e31476415220af13_521332be4a" tabindex="-1" value=""></div>
+									<div class="optionalParent">
+										<div class="clear-foot" style="padding-left: 2px !important;">
+											<input type="submit" value="送出" name="subscribe" id="mc-embedded-subscribe" class="button">   
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						
+						<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js' defer="defer"></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+						
+					</div>
+				</div>
 				<!-- SUBSCRIPTION BOARD END -->
 				
 				
 				
 				<!-- COMMENT BOARD BEGIN -->
-				<div id="commemtBoard"></div>
+				<div id="commemtBoard">
+					<div id="commemt-box-topic">	
+						<h4>留言板</h4>
+					</div>
+					
+					<div id="commemt-box">	
+						
+						<div id="remarkbox-div">
+							<noscript>
+								<iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+							</noscript>
+						</div>
+						<script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js" defer="defer"></script>
+						<script>
+							var rb_owner_key = "9f0fa28b-1ac0-11ed-9ff4-83aad5f5c937";
+							var thread_uri = window.location.href;
+							var thread_title = window.document.title;
+							var thread_fragment = window.location.hash;
+							
+							// rb owner was here.
+							var rb_src = "https://my.remarkbox.com/embed" + 
+								"?rb_owner_key=" + rb_owner_key +
+								"&thread_title=" + encodeURI(thread_title) +
+								"&thread_uri=" + encodeURIComponent(thread_uri) + 
+								thread_fragment;
+							
+							function create_remarkbox_iframe() {
+								var ifrm = document.createElement("iframe");
+								ifrm.setAttribute("id", "remarkbox-iframe");
+								ifrm.setAttribute("scrolling", "no");
+								ifrm.setAttribute("src", rb_src);
+								ifrm.setAttribute("frameborder", "0");
+								ifrm.setAttribute("tabindex", "0");
+								ifrm.setAttribute("title", "Remarkbox");
+								ifrm.style.width = "100%";
+								document.getElementById("remarkbox-div").appendChild(ifrm);
+							}
+							create_remarkbox_iframe();
+							iFrameResize(
+								{
+								checkOrigin: ["https://my.remarkbox.com"],
+								inPageLinks: true,
+								initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
+								},
+								document.getElementById("remarkbox-iframe")
+							);
+						</script>
+						
+					</div>
+				</div>
 				<!-- COMMENT BOARD END -->
 				
 				<!-- IG BOTTOM BAR BEGIN -->
-				<div id="igBottomBar"></div>
+				<div id="igBottomBar">
+					<div id="ig-bottom-bar-name">
+						<h4>Instagram</h4>
+					</div>
+					<div id="ig-bottom-bar-outer-box">
+						<div id="ig-bottom-bar-box">
+						
+							<div id="ig-bottom-bar-box-pic1">
+								<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+									<i class="fa fa-image"></i>
+									<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture1">
+								</a>
+							</div>
+							
+							<div id="ig-bottom-bar-box-pic2">
+								<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+									<i class="fa fa-image"></i>
+									<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture2">
+								</a>
+							</div>
+							
+							<div id="ig-bottom-bar-box-pic3">
+								<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+									<i class="fa fa-image"></i>
+									<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture3">
+								</a>
+							</div>
+							
+							<div id="ig-bottom-bar-box-pic4">
+								<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+									<i class="fa fa-image"></i>
+									<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture4">
+								</a>
+							</div>
+							
+							<div id="ig-bottom-bar-box-pic5">
+								<a href="https://www.instagram.com/p/ChFAUAfAESC/" target="_blank">
+									<i class="fa fa-image"></i>
+									<img class="lazyload" data-src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig-pictures/bottombar/Nantou-Qingjing-Farm11.jpg" alt="igBottomBarPicture5">
+								</a>
+							</div>
+				
+						</div>
+					</div>
+					
+					<div id="ig-bottom-bar-btn">
+						<a href="#" target="_blank">
+							<p><i class="fa-brands fa-instagram"></i>&nbsp;前往Instagram觀看</p>
+						</a>
+					</div>
+					
+				</div>
+				
 				<!-- IG BOTTOM BAR END -->
 				
 				<!-- FOOTER BEGIN -->
-				<footer id="footerPage"></footer>
+				<footer id="footerPage">
+					<div id="footer-main-content">
+						<h3>Pacific峰的部落格</h3>
+						<p>To do what you want to do with effort!</p>
+						<ul class="socials">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+					
+					<div id="footer-bottom">
+						<p>Copyright &copy;2022 Pacific-Feng-Blog. Design by <span>Pacific-Feng</span></p>
+					</div>
+				</footer>
 				<!-- FOOTER END -->
 				
 			</div>	

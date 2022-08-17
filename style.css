@@ -947,11 +947,6 @@ nav .icon-list{
 
 
 /* FB SIDE BAR.CSS BEGIN */
-#fbSideBar a{
-	text-decoration: none;
-	color: white;
-}
-
 #fbSideBar{
 	grid-column: 1/2;
 	grid-row: 4/5;
