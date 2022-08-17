@@ -770,7 +770,7 @@ nav .icon-list{
 /* IG SIDE BAR.CSS BEGIN */
 :root{
 	--igSideBarBtnColor: #f6ebe8;
-	--igSideBarBtnColorHover: #edd7d2;
+	--igSideBarBtnColorHover: #e6c7c0;
 }
 
 #igSideBar a{
@@ -949,13 +949,123 @@ nav .icon-list{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 100px 1fr;
-	
 }
 
-#fb-sidebar-body{
+#fbSideBar a{
+	text-decoration: none;
+	color: white;
+}
+
+#fb-sidebar-top{
 	grid-column: 1/2;
 	grid-row: 2/3;
+	display: grid;
+	grid-template-columns: 75px 7px 215px;
+	grid-template-rows: 1fr 1fr;
+	width: 300px;
+	height: 80px;
+	background-image: url("https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/fb-pictures/golden-bridge10.JPG");
+	background-size: 100%;
 }
+
+#fb-sidebar-pic-outer{
+	grid-column: 1/2;
+	grid-row: 1/3;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+#fb-sidebar-pic{
+	grid-column: 1/2;
+	grid-row: 1/3;
+	border: 2px solid white;
+	height: 60px;
+}
+
+#fb-sidebar-pic img{
+	width: 56px;
+	height: 56px;
+}
+
+#fb-sidebar-name{
+	grid-column: 3/4;
+	grid-row: 1/2;
+	display: flex;
+	justify-content: begin;
+	align-items: end;
+	padding-bottom: 8px;
+	padding-left: 15px;
+}
+
+#fb-sidebar-name h3{
+	font-family: none;
+	letter-spacing: 0.2px;
+	font-size: 20px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+#fb-sidebar-name:hover h3{
+	color: 	#f1f1f1;
+}
+
+
+#fb-sidebar-good{
+	grid-column: 3/4;
+	grid-row: 2/3;
+	background: white;
+	height: 22px;
+	width: 85px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 4px 0 0 12px;
+	border-radius: 2px;
+	transition: all 0.3s ease;
+}
+
+#fb-sidebar-good:hover{
+	background: #f1f1f1;
+}
+
+#fb-sidebar-good p{
+	font-size: 13px;
+	color: #5c5c5c;
+	font-family: none;
+}
+
+#fb-sidebar-btn-box{
+	grid-column: 1/2;
+	grid-row: 3/4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+#fb-sidebar-btn{
+	background: var(--igSideBarBtnColor);
+    border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 175px;
+    height: 41px;
+	transition: all 0.5s ease;
+}
+
+#fb-sidebar-btn:hover{
+	background: var(--igSideBarBtnColorHover);
+}
+
+#fb-sidebar-btn p{
+	font-size: 14px;
+    color: #73736F;
+    letter-spacing: 0.5px;
+	font-weight: 400;
+}
+
+
 
 @media only screen and (max-width: 1100px){
 	#fbSideBar{
