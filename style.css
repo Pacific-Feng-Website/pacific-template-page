@@ -1081,3 +1081,22 @@ nav .icon-list{
 /* FB SIDE BAR.CSS END */
 
 
+/* KLOOK SIDE BAR.CSS BEGIN*/
+#klookSideBar{
+	grid-column: 1/2;
+	grid-row: 5/6;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 1fr;
+}
+
+#klookSideBar a{
+	text-decoration: none;
+	color: white;
+}
+
+#klook-commerce{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+/* KLOOK SIDE BAR.CSS END*/
