@@ -120,7 +120,7 @@ nav li{
 	background: var(--navMainBackgroundColor);
 	width: 100%;
 	left: 0;
-	padding: 0 30px;
+	padding: 0 50px;
 	opacity: 0;
 	visibility: hidden;
 }
@@ -130,23 +130,12 @@ nav li{
 	padding: 25px 20px;
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
-}
-
-.mega-menu .mega-menu-content div:nth-child(1){
-	display:flex;
-	align-items:center;
+	justify-content: space-around;
 }
 
 .mega-menu-content .row{
 	width: calc(25%-30px);
 	line-height: 35px;
-}
-
-.mega-menu-content .row img{
-	width: 10px;
-	height: 10px;
-	object-fit: cover;
 }
 
 .mega-menu-content .row header{
@@ -404,12 +393,16 @@ nav .icon-list{
 	
 	.mega-menu-content .row header{
 		font-size: 17px;
-		margin-top: 20px;
+		margin-top: 15px;
 		font-weight: 400;
 	}
 	
+	.mega-menu-content .row:nth-child(1) header{
+		margin-top: 0px;
+	}
+	
 	.mega-menu-content .row:nth-child(2) header{
-		margin-top: -25px;
+		margin-top: 10px;
 	}
 	
 	.mega-menu-content .row li a{
