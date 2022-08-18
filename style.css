@@ -1094,7 +1094,7 @@ nav .icon-list{
 	text-decoration: none;
 }
 
-#klook-title{
+#klook-side-title{
 	grid-column: 1/2;
 	grid-row: 2/3;
 	display: flex;
@@ -1102,11 +1102,11 @@ nav .icon-list{
 	align-items: center;
 }
 
-#klook-title p{
+#klook-side-title p{
 	font-size: 20px;
 }
 
-#klook-commerce{
+#klook-side-commerce{
 	grid-column: 1/2;
 	grid-row: 4/5;
 	display: grid;
