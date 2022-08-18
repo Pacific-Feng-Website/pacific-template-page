@@ -125,6 +125,10 @@ nav li{
 	visibility: hidden;
 }
 
+.mega-menu:hover ~ .desktop-item{
+	background: var(--navHoverBackgroundColor) ;
+}
+
 .mega-menu .mega-menu-content{
 	background: var(--navMainBackgroundColor);
 	padding: 25px 20px;
