@@ -1092,11 +1092,11 @@ nav .icon-list{
 
 #klookSideBar a{
 	text-decoration: none;
-	color: white;
 }
 
 #klook-commerce{
 	grid-column: 1/2;
 	grid-row: 2/3;
+	height: 200px;
 }
 /* KLOOK SIDE BAR.CSS END*/
