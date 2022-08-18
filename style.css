@@ -1094,6 +1094,14 @@ nav .icon-list{
 	text-decoration: none;
 }
 
+#klook-title{
+	grid-column: 1/2;
+	grid-row: 2/3;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
 #klook-commerce{
 	grid-column: 1/2;
 	grid-row: 3/4;
