@@ -125,7 +125,7 @@ nav li{
 	visibility: hidden;
 }
 
-.mega-menu:hover ~ .desktop-item{
+.mega-menu:hover ~ li{
 	background: var(--navHoverBackgroundColor) ;
 }
 
