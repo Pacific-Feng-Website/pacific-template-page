@@ -694,6 +694,32 @@ nav .icon-list{
 		letter-spacing: 2px;
 	}
 }
+
+@media only screen and (max-width: 420px){
+
+	#topic h2.second-topic{
+		letter-spacing: 1px;
+	}
+}
+
+@media only screen and (max-width: 390px){
+
+	#topic h2.second-topic{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 365px){
+
+	#topic h1.main-topic{
+		font-size: 24px;
+	}
+	
+	#topic h2.second-topic{
+		letter-spacing: 0.5px;
+	}
+}
+
 /* MAIN CONTENT.CSS END */
 
 
